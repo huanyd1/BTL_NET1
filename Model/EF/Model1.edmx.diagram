@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="15c4a428c83b48789cdbbe9a0e22010f" Name="Diagram1">
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.Admin" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.danhSachPhong" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.datPhong" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.hoaDon" Width="1.5" PointX="9.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.khachHang" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.kieuThanhToan" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.loaiTheKhachHang" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.sysdiagram" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.theKhachHang" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.thongTinKhachSan" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <AssociationConnector Association="QUANLYKHACHSANModel.FK__danhSachP__giaPh__1273C1CD" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYKHACHSANModel.FK__datPhong__maPhon__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYKHACHSANModel.FK__datPhong__mieuTa__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYKHACHSANModel.fk_hoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYKHACHSANModel.FK__hoaDon__ghiChu__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYKHACHSANModel.FK__khachHang__mieuT__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYKHACHSANModel.FK__theKhachH__maLoa__1A14E395" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
