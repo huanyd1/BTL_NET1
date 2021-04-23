@@ -28,5 +28,10 @@ namespace LoginWF
         {
             AddToScreen(new CardCustomer.UcSelectCadCustomer());
         }
+
+        private void btnBill_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            AddToScreen(new Bill.UcSelectBill());
+        }
     }
 }

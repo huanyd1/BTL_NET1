@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bill\UcSelectBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bill\UcSelectBill.Designer.cs">
+      <DependentUpon>UcSelectBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="CardCustomer\frmAddCardCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bill\UcSelectBill.resx">
+      <DependentUpon>UcSelectBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CardCustomer\frmAddCardCustomer.resx">
       <DependentUpon>frmAddCardCustomer.cs</DependentUpon>
     </EmbeddedResource>

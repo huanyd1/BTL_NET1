@@ -16,6 +16,12 @@ namespace LoginWF.Bill
         public UcSelectBill()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
+        }
+
+        private void UcSelectBill_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

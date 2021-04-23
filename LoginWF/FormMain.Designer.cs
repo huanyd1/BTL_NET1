@@ -33,13 +33,13 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.btnCardCustomer = new DevExpress.XtraBars.BarButtonItem();
+            this.btnBill = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.panelSelect = new System.Windows.Forms.Panel();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             this.barButtonItem1,
             this.barButtonItem2,
             this.btnCardCustomer,
-            this.barButtonItem3});
+            this.btnBill});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.MaxItemId = 5;
             this.ribbon.Name = "ribbon";
@@ -83,6 +83,14 @@
             this.btnCardCustomer.Name = "btnCardCustomer";
             this.btnCardCustomer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCardCustomer_ItemClick);
             // 
+            // btnBill
+            // 
+            this.btnBill.Caption = "Bill";
+            this.btnBill.Id = 4;
+            this.btnBill.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.btnBill.Name = "btnBill";
+            this.btnBill.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBill_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -102,6 +110,11 @@
             this.ribbonPageGroup2.ItemLinks.Add(this.btnCardCustomer);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnBill);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            // 
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 709);
@@ -116,18 +129,6 @@
             this.panelSelect.Name = "panelSelect";
             this.panelSelect.Size = new System.Drawing.Size(1354, 530);
             this.panelSelect.TabIndex = 2;
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Caption = "Bill";
-            this.barButtonItem3.Id = 4;
-            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.barButtonItem3.Name = "barButtonItem3";
             // 
             // FormMain
             // 
@@ -159,7 +160,7 @@
         private DevExpress.XtraBars.BarButtonItem btnCardCustomer;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private System.Windows.Forms.Panel panelSelect;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem btnBill;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
     }
 }
