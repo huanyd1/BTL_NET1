@@ -104,9 +104,9 @@
             // 
             this.panel6.Controls.Add(this.gCardCustomer);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 117);
+            this.panel6.Location = new System.Drawing.Point(3, 119);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(665, 404);
+            this.panel6.Size = new System.Drawing.Size(665, 402);
             this.panel6.TabIndex = 3;
             // 
             // gCardCustomer
@@ -115,7 +115,7 @@
             this.gCardCustomer.Location = new System.Drawing.Point(0, 0);
             this.gCardCustomer.MainView = this.gvCardCustomer;
             this.gCardCustomer.Name = "gCardCustomer";
-            this.gCardCustomer.Size = new System.Drawing.Size(665, 404);
+            this.gCardCustomer.Size = new System.Drawing.Size(665, 402);
             this.gCardCustomer.TabIndex = 10;
             this.gCardCustomer.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvCardCustomer});
@@ -169,7 +169,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(3, 19);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(665, 98);
+            this.panel5.Size = new System.Drawing.Size(665, 100);
             this.panel5.TabIndex = 2;
             // 
             // cbCardType

@@ -56,8 +56,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\BaseDAO.cs" />
+    <Compile Include="DAO\BillDAO.cs" />
+    <Compile Include="DAO\BookRoomDAO.cs" />
     <Compile Include="DAO\CardTypeDAO.cs" />
     <Compile Include="DAO\CardCustomerDAO.cs" />
+    <Compile Include="DAO\PaymentTypeDAO.cs" />
     <Compile Include="DAO\thongTinKhachSanDAO.cs" />
     <Compile Include="EF\Admin.cs">
       <DependentUpon>Model1.tt</DependentUpon>
