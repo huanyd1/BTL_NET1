@@ -28,18 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.btnCardCustomer = new DevExpress.XtraBars.BarButtonItem();
             this.btnBill = new DevExpress.XtraBars.BarButtonItem();
+            this.btnListRoom = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.panelSelect = new System.Windows.Forms.Panel();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,13 +55,15 @@
             this.barButtonItem1,
             this.barButtonItem2,
             this.btnCardCustomer,
-            this.btnBill});
+            this.btnBill,
+            this.btnListRoom});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 5;
+            this.ribbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ribbon.MaxItemId = 6;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbon.Size = new System.Drawing.Size(1354, 179);
+            this.ribbon.Size = new System.Drawing.Size(1171, 162);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // barButtonItem1
@@ -87,16 +93,25 @@
             // 
             this.btnBill.Caption = "Bill";
             this.btnBill.Id = 4;
-            this.btnBill.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.btnBill.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBill.ImageOptions.LargeImage")));
             this.btnBill.Name = "btnBill";
             this.btnBill.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBill_ItemClick);
+            // 
+            // btnListRoom
+            // 
+            this.btnListRoom.Caption = "Room";
+            this.btnListRoom.Id = 5;
+            this.btnListRoom.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnListRoom.ImageOptions.LargeImage")));
+            this.btnListRoom.Name = "btnListRoom";
+            this.btnListRoom.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnListRoom_ItemClick);
             // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2,
-            this.ribbonPageGroup3});
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup4});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Manager";
             // 
@@ -115,29 +130,41 @@
             this.ribbonPageGroup3.ItemLinks.Add(this.btnBill);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnListRoom);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 709);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 584);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1354, 40);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1171, 26);
             // 
             // panelSelect
             // 
             this.panelSelect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSelect.Location = new System.Drawing.Point(0, 179);
+            this.panelSelect.Location = new System.Drawing.Point(0, 162);
+            this.panelSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelSelect.Name = "panelSelect";
-            this.panelSelect.Size = new System.Drawing.Size(1354, 530);
+            this.panelSelect.Size = new System.Drawing.Size(1171, 422);
             this.panelSelect.TabIndex = 2;
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "The Bezier";
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1354, 749);
+            this.ClientSize = new System.Drawing.Size(1171, 610);
             this.Controls.Add(this.panelSelect);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormMain";
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -162,5 +189,8 @@
         private System.Windows.Forms.Panel panelSelect;
         private DevExpress.XtraBars.BarButtonItem btnBill;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.BarButtonItem btnListRoom;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
     }
 }

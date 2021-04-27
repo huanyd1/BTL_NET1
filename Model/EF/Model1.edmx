@@ -43,7 +43,7 @@
           </Key>
           <Property Name="maHoaDon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="maDatPhong" Type="int" />
-          <Property Name="ngayThanhToan" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="ngayThanhToan" Type="datetime" Nullable="false" />
           <Property Name="soTien" Type="money" />
           <Property Name="maKieuThanhToan" Type="int" />
           <Property Name="ghiChu" Type="nvarchar(max)" />
@@ -277,7 +277,7 @@
           </Key>
           <Property Name="maHoaDon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="maDatPhong" Type="Int32" />
-          <Property Name="ngayThanhToan" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ngayThanhToan" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="soTien" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="maKieuThanhToan" Type="Int32" />
           <Property Name="ghiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -432,7 +432,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="QUANLYKHACHSANEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="QUANLYKHACHSANEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Admins" EntityType="Self.Admin" />
           <EntitySet Name="danhSachPhongs" EntityType="Self.danhSachPhong" />
           <EntitySet Name="datPhongs" EntityType="Self.datPhong" />
@@ -477,7 +477,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="QUANLYKHACHSANModelStoreContainer" CdmEntityContainer="QUANLYKHACHSANEntities">
+        <EntityContainerMapping StorageEntityContainer="QUANLYKHACHSANModelStoreContainer" CdmEntityContainer="QUANLYKHACHSANEntities1">
           <EntitySetMapping Name="Admins">
             <EntityTypeMapping TypeName="QUANLYKHACHSANModel.Admin">
               <MappingFragment StoreEntitySet="Admin">

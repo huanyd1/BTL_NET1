@@ -33,5 +33,10 @@ namespace LoginWF
         {
             AddToScreen(new Bill.UcSelectBill());
         }
+
+        private void btnListRoom_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            AddToScreen(new ListRoom.UcSelectListRoom());
+        }
     }
 }

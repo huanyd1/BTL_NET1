@@ -16,7 +16,7 @@ namespace Model.EF
     {
         public int maHoaDon { get; set; }
         public Nullable<int> maDatPhong { get; set; }
-        public byte[] ngayThanhToan { get; set; }
+        public System.DateTime ngayThanhToan { get; set; }
         public Nullable<decimal> soTien { get; set; }
         public Nullable<int> maKieuThanhToan { get; set; }
         public string ghiChu { get; set; }

@@ -100,6 +100,12 @@
     <Compile Include="CardCustomer\UcSelectCadCustomer.Designer.cs">
       <DependentUpon>UcSelectCadCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer\UcSelectCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\UcSelectCustomer.Designer.cs">
+      <DependentUpon>UcSelectCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,24 @@
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListRoom\frmAddBookRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListRoom\frmAddBookRoom.Designer.cs">
+      <DependentUpon>frmAddBookRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListRoom\frmAddListRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListRoom\frmAddListRoom.Designer.cs">
+      <DependentUpon>frmAddListRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListRoom\UcSelectListRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListRoom\UcSelectListRoom.Designer.cs">
+      <DependentUpon>UcSelectListRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,11 +156,23 @@
     <EmbeddedResource Include="CardCustomer\UcSelectCadCustomer.resx">
       <DependentUpon>UcSelectCadCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Customer\UcSelectCustomer.resx">
+      <DependentUpon>UcSelectCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListRoom\frmAddBookRoom.resx">
+      <DependentUpon>frmAddBookRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListRoom\frmAddListRoom.resx">
+      <DependentUpon>frmAddListRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListRoom\UcSelectListRoom.resx">
+      <DependentUpon>UcSelectListRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -184,6 +220,7 @@
     <Content Include="Images\MainImages\add.png" />
     <Content Include="Images\MainImages\new.png" />
     <Content Include="Images\password.png" />
+    <Content Include="Images\room.png" />
     <Content Include="Images\twitter.png" />
     <Content Include="Images\username.png" />
     <None Include="Images\x-button.png" />

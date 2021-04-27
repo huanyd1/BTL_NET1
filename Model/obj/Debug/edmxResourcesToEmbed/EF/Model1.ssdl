@@ -38,7 +38,7 @@
     </Key>
     <Property Name="maHoaDon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="maDatPhong" Type="int" />
-    <Property Name="ngayThanhToan" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="ngayThanhToan" Type="datetime" Nullable="false" />
     <Property Name="soTien" Type="money" />
     <Property Name="maKieuThanhToan" Type="int" />
     <Property Name="ghiChu" Type="nvarchar(max)" />

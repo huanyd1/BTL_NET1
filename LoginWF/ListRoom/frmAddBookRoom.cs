@@ -11,18 +11,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoginWF.Bill
+namespace LoginWF.ListRoom
 {
-    public partial class frmAddBill : DevExpress.XtraEditors.XtraForm
+    public partial class frmAddBookRoom : DevExpress.XtraEditors.XtraForm
     {
-
         private bool isSave_ = false;
         private bool isAdd_;
-        private int idPaymentType_;
-        private int idBill_;
         private int idBookRoom_;
+        private int idCustomer_;
+        private int idRoom_;
 
-        public frmAddBill()
+        public frmAddBookRoom()
         {
             InitializeComponent();
         }
@@ -47,22 +46,6 @@ namespace LoginWF.Bill
             }
         }
 
-        public int IDPaymentType
-        {
-            set
-            {
-                idPaymentType_ = value;
-            }
-        }
-
-        public int IDBill
-        {
-            set
-            {
-                idBill_ = value;
-            }
-        }
-
         public int IDBookRoom
         {
             set
@@ -71,56 +54,74 @@ namespace LoginWF.Bill
             }
         }
 
-        private void frmAddBill_Load(object sender, EventArgs e)
+        public int IDCustomer
         {
-            txtMoney.Focus();
+            set
+            {
+                idCustomer_ = value;
+            }
+        }
+
+        public int IDRoom
+        {
+            set
+            {
+                idRoom_ = value;
+            }
+        }
+
+        private void frmAddBookRoom_Load(object sender, EventArgs e)
+        {
+            txtDescribeBookRoom.Focus();
             if (!isAdd_)
             {
-                BillDAO dao = new BillDAO();
-                hoaDon info = dao.GetSingleByID(idBill_);
+                BookRoomDAO dao = new BookRoomDAO();
+                datPhong info = dao.GetSingleByID(idBookRoom_);
 
-                txtIdBill.Text = info.maHoaDon.ToString();
                 txtIdBookRoom.Text = info.maDatPhong.ToString();
-                dtimeDateOfPayment.Text = info.ngayThanhToan.ToString();
-                txtMoney.Text = info.soTien.ToString();
-                txtIdPaymentType.Text = info.maKieuThanhToan.ToString();
-                txtDescribeBill.Text = info.ghiChu.ToString();
+                txtIdCustomer.Text = info.maKhachHang.ToString();
+                txtIdRoom.Text = info.maPhong.ToString();
+                dtimeStartDate.Text = info.ngayBatDau.ToString();
+                dtimeEndDate.Text = info.ngayKetThuc.ToString();
+                txtPrice.Text = info.gia.ToString();
+                txtDescribeBookRoom.Text = info.mieuTaDatPhong.ToString();
             }
             else
             {
                 //BillDAO dao = new CardCustomerDAO();
-                txtIdBill.Text = idBill_.ToString();
-                txtIdPaymentType.Text = idPaymentType_.ToString();
                 txtIdBookRoom.Text = idBookRoom_.ToString();
+                txtIdCustomer.Text = idCustomer_.ToString();
+                txtIdRoom.Text = idRoom_.ToString();
             }
         }
 
         public bool CheckEmpty()
         {
             bool flag = true;
-            if (txtMoney.Text == string.Empty)
+            if (txtDescribeBookRoom.Text == string.Empty)
             {
-                errorProvider.SetError(txtMoney, "Số tiền không được để trống");
+                errorProvider.SetError(txtDescribeBookRoom, "Miêu tả đặt phòng không được để trống");
                 flag = false;
             }
             else
             {
-                errorProvider.SetError(txtMoney, null);
+                errorProvider.SetError(txtDescribeBookRoom, null);
             }
 
             return flag;
         }
 
-        public hoaDon GetInfoBill()
+        public datPhong GetInfoBookRoom()
         {
-            BillDAO dao = new BillDAO();
-            hoaDon info = new hoaDon();
-            info.maHoaDon = int.Parse(txtIdBill.Text);
+            BookRoomDAO dao = new BookRoomDAO();
+            datPhong info = new datPhong();
             info.maDatPhong = int.Parse(txtIdBookRoom.Text);
-            info.ngayThanhToan = DateTime.Parse(dtimeDateOfPayment.Text);
-            info.soTien = decimal.Parse(txtMoney.Text);
-            info.maKieuThanhToan = int.Parse(txtIdPaymentType.Text);
-            info.ghiChu = txtDescribeBill.Text;
+            info.maKhachHang = int.Parse(txtIdCustomer.Text);
+            info.maPhong = int.Parse(txtIdRoom.Text);
+            info.ngayBatDau = DateTime.Parse(dtimeStartDate.Text);
+            info.ngayKetThuc = DateTime.Parse(dtimeEndDate.Text);
+            info.gia = decimal.Parse(txtPrice.Text);
+            info.mieuTaDatPhong = txtDescribeBookRoom.Text;
 
             return info;
         }
@@ -132,15 +133,20 @@ namespace LoginWF.Bill
                 return;
             }
 
-            BillDAO dao = new BillDAO();
+            if (!CheckEmpty())
+            {
+                return;
+            }
 
-            hoaDon info = GetInfoBill();
+            BookRoomDAO dao = new BookRoomDAO();
+
+            datPhong info = GetInfoBookRoom();
 
             if (isAdd_)
             {
-                if (txtMoney.Text.Trim().Equals(dao.GetNameByIDHoaDon(decimal.Parse(txtMoney.Text)), StringComparison.OrdinalIgnoreCase) && int.Parse(txtMoney.Text) == dao.GetIDByName(int.Parse(txtMoney.Text)))
+                if (txtIdBookRoom.Text.Trim().Equals(dao.GetNameByIDDatPhong(int.Parse(txtIdBookRoom.Text)), StringComparison.OrdinalIgnoreCase) && int.Parse(txtDescribeBookRoom.Text) == dao.GetIDByName(int.Parse(txtDescribeBookRoom.Text)))
                 {
-                    DialogResult dlg = MessageBox.Show(string.Format("Hóa đơn đã có, vẫn muốn thêm?"), "Câu hỏi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult dlg = MessageBox.Show(string.Format("Phòng này đã có, vẫn muốn thêm?"), "Câu hỏi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (dlg == DialogResult.Yes)
                     {
                         if (dao.Add(info))
@@ -169,13 +175,14 @@ namespace LoginWF.Bill
 
             if (isSave_)
             {
-                MessageBox.Show(string.Format("{0} hóa đơn thành công!", isAdd_ == true ? "Thêm" : "Sửa"), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(string.Format("{0} đặt phòng thành công!", isAdd_ == true ? "Thêm" : "Sửa"), "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
             else
             {
-                MessageBox.Show(string.Format("{0} hóa đơn thất bại!", isAdd_ == true ? "Thêm" : "Sửa"), "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(string.Format("{0} đặt phòng thất bại!", isAdd_ == true ? "Thêm" : "Sửa"), "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)

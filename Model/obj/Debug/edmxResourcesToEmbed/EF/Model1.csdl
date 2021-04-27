@@ -43,7 +43,7 @@
     </Key>
     <Property Name="maHoaDon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="maDatPhong" Type="Int32" />
-    <Property Name="ngayThanhToan" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ngayThanhToan" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="soTien" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="maKieuThanhToan" Type="Int32" />
     <Property Name="ghiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -198,7 +198,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="QUANLYKHACHSANEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="QUANLYKHACHSANEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Admins" EntityType="Self.Admin" />
     <EntitySet Name="danhSachPhongs" EntityType="Self.danhSachPhong" />
     <EntitySet Name="datPhongs" EntityType="Self.datPhong" />
