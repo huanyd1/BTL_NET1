@@ -9,10 +9,10 @@ namespace Model.DAO
 {
     public class BaseDAO
     {
-        protected QUANLYKHACHSANEntities1 db_;
+        protected QUANLYKHACHSANEntities db_;
         public BaseDAO()
         {
-            db_ = new QUANLYKHACHSANEntities1();
+            db_ = new QUANLYKHACHSANEntities();
         }
     }
 }

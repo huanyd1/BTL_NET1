@@ -16,6 +16,7 @@ namespace LoginWF
         public FormMain()
         {
             InitializeComponent();
+            btnHotelInfomation_ItemClick(null, null);
         }
 
         private void AddToScreen(Control control)
@@ -37,6 +38,21 @@ namespace LoginWF
         private void btnListRoom_ItemClick(object sender, ItemClickEventArgs e)
         {
             AddToScreen(new ListRoom.UcSelectListRoom());
+        }
+
+        private void btnCustomer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            AddToScreen(new Customer.UcSelectCustomer());
+        }
+
+        private void btnHotelInfomation_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            AddToScreen(new HotelInformation.UcSelectHotelInformation());
+        }
+
+        private void btnSaleReport_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            AddToScreen(new SalesReport.UcSelectSalesReport());
         }
     }
 }

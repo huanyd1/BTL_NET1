@@ -13,10 +13,10 @@ namespace Model.EF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QUANLYKHACHSANEntities1 : DbContext
+    public partial class QUANLYKHACHSANEntities : DbContext
     {
-        public QUANLYKHACHSANEntities1()
-            : base("name=QUANLYKHACHSANEntities1")
+        public QUANLYKHACHSANEntities()
+            : base("name=QUANLYKHACHSANEntities")
         {
         }
     

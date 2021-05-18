@@ -50,9 +50,21 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,6 +74,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bill\frmAddBill.cs">
@@ -100,6 +114,12 @@
     <Compile Include="CardCustomer\UcSelectCadCustomer.Designer.cs">
       <DependentUpon>UcSelectCadCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer\frmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmAddCustomer.Designer.cs">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer\UcSelectCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -117,6 +137,12 @@
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelInformation\UcSelectHotelInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HotelInformation\UcSelectHotelInformation.Designer.cs">
+      <DependentUpon>UcSelectHotelInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="ListRoom\frmAddBookRoom.cs">
       <SubType>Form</SubType>
@@ -138,6 +164,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesReport\UcSelectSalesReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalesReport\UcSelectSalesReport.Designer.cs">
+      <DependentUpon>UcSelectSalesReport.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Bill\frmAddBill.resx">
       <DependentUpon>frmAddBill.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +188,9 @@
     <EmbeddedResource Include="CardCustomer\UcSelectCadCustomer.resx">
       <DependentUpon>UcSelectCadCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmAddCustomer.resx">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customer\UcSelectCustomer.resx">
       <DependentUpon>UcSelectCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelInformation\UcSelectHotelInformation.resx">
+      <DependentUpon>UcSelectHotelInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListRoom\frmAddBookRoom.resx">
       <DependentUpon>frmAddBookRoom.cs</DependentUpon>
@@ -179,6 +217,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReport\UcSelectSalesReport.resx">
+      <DependentUpon>UcSelectSalesReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -213,6 +254,8 @@
     <Content Include="Images\customer-feedback.png" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\google.png" />
+    <Content Include="Images\hotel.png" />
+    <Content Include="Images\hotel_information.jpg" />
     <Content Include="Images\login.jpg" />
     <Content Include="Images\cancel.png" />
     <Content Include="Images\logo.jpg" />
@@ -221,6 +264,7 @@
     <Content Include="Images\MainImages\new.png" />
     <Content Include="Images\password.png" />
     <Content Include="Images\room.png" />
+    <Content Include="Images\sale-report.png" />
     <Content Include="Images\twitter.png" />
     <Content Include="Images\username.png" />
     <None Include="Images\x-button.png" />

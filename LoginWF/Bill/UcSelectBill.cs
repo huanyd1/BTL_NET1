@@ -49,7 +49,7 @@ namespace LoginWF.Bill
                 int idPaymentType;
                 if (int.TryParse(gvPaymentType.GetFocusedRowCellValue("maKieuThanhToan").ToString(), out idPaymentType))
                 {
-                    BillDAO dao = new BillDAO();
+                    HotelInformationDAO dao = new HotelInformationDAO();
                     gBill.DataSource = dao.GetBillByIDPaymentType(idPaymentType);
                 }
             }

@@ -208,3 +208,16 @@ C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.Bill.frmA
 C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.ListRoom.UcSelectListRoom.resources
 C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.ListRoom.frmAddListRoom.resources
 C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.ListRoom.frmAddBookRoom.resources
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.Customer.UcSelectCustomer.resources
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.Customer.frmAddCustomer.resources
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.HotelInformation.UcSelectHotelInformation.resources
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.dll
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.pdb
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.xml
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.SalesReport.UcSelectSalesReport.resources

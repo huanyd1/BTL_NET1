@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Model.DAO
 {
-    public class BillDAO : BaseDAO
+    public class HotelInformationDAO : BaseDAO
     {
         public List<hoaDon> GetAll()
         {

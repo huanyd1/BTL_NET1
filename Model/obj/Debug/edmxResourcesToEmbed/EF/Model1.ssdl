@@ -100,6 +100,13 @@
     <Property Name="mieuTaKhachSan" Type="nvarchar" MaxLength="100" />
     <Property Name="soPhong" Type="int" />
   </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'QUANLYKHACHSAN.dbo.SalesReport' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="SalesReport">
+          <Property Name="SalesYear" Type="int" />
+          <Property Name="SalesMonth" Type="int" />
+          <Property Name="TotalSales" Type="money" />
+        </EntityType>-->
   <Association Name="FK__danhSachP__giaPh__1273C1CD">
     <End Role="thongTinKhachSan" Type="Self.thongTinKhachSan" Multiplicity="0..1" />
     <End Role="danhSachPhong" Type="Self.danhSachPhong" Multiplicity="*" />

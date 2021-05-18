@@ -61,6 +61,7 @@
     <Compile Include="DAO\CardTypeDAO.cs" />
     <Compile Include="DAO\CardCustomerDAO.cs" />
     <Compile Include="DAO\CustomerDAO.cs" />
+    <Compile Include="DAO\HotelInfomationDAO.cs" />
     <Compile Include="DAO\ListRoomDAO.cs" />
     <Compile Include="DAO\PaymentTypeDAO.cs" />
     <Compile Include="DAO\thongTinKhachSanDAO.cs" />

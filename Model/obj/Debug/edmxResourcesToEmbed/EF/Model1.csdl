@@ -198,7 +198,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="QUANLYKHACHSANEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="QUANLYKHACHSANEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Admins" EntityType="Self.Admin" />
     <EntitySet Name="danhSachPhongs" EntityType="Self.danhSachPhong" />
     <EntitySet Name="datPhongs" EntityType="Self.datPhong" />

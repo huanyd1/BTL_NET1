@@ -76,7 +76,7 @@ namespace LoginWF.Bill
             txtMoney.Focus();
             if (!isAdd_)
             {
-                BillDAO dao = new BillDAO();
+                HotelInformationDAO dao = new HotelInformationDAO();
                 hoaDon info = dao.GetSingleByID(idBill_);
 
                 txtIdBill.Text = info.maHoaDon.ToString();
@@ -113,7 +113,7 @@ namespace LoginWF.Bill
 
         public hoaDon GetInfoBill()
         {
-            BillDAO dao = new BillDAO();
+            HotelInformationDAO dao = new HotelInformationDAO();
             hoaDon info = new hoaDon();
             info.maHoaDon = int.Parse(txtIdBill.Text);
             info.maDatPhong = int.Parse(txtIdBookRoom.Text);
@@ -132,7 +132,7 @@ namespace LoginWF.Bill
                 return;
             }
 
-            BillDAO dao = new BillDAO();
+            HotelInformationDAO dao = new HotelInformationDAO();
 
             hoaDon info = GetInfoBill();
 

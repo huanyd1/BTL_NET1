@@ -105,6 +105,13 @@
           <Property Name="mieuTaKhachSan" Type="nvarchar" MaxLength="100" />
           <Property Name="soPhong" Type="int" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'QUANLYKHACHSAN.dbo.SalesReport' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="SalesReport">
+          <Property Name="SalesYear" Type="int" />
+          <Property Name="SalesMonth" Type="int" />
+          <Property Name="TotalSales" Type="money" />
+        </EntityType>-->
         <Association Name="FK__danhSachP__giaPh__1273C1CD">
           <End Role="thongTinKhachSan" Type="Self.thongTinKhachSan" Multiplicity="0..1" />
           <End Role="danhSachPhong" Type="Self.danhSachPhong" Multiplicity="*" />
@@ -432,7 +439,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="QUANLYKHACHSANEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="QUANLYKHACHSANEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Admins" EntityType="Self.Admin" />
           <EntitySet Name="danhSachPhongs" EntityType="Self.danhSachPhong" />
           <EntitySet Name="datPhongs" EntityType="Self.datPhong" />
@@ -477,7 +484,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="QUANLYKHACHSANModelStoreContainer" CdmEntityContainer="QUANLYKHACHSANEntities1">
+        <EntityContainerMapping StorageEntityContainer="QUANLYKHACHSANModelStoreContainer" CdmEntityContainer="QUANLYKHACHSANEntities">
           <EntitySetMapping Name="Admins">
             <EntityTypeMapping TypeName="QUANLYKHACHSANModel.Admin">
               <MappingFragment StoreEntitySet="Admin">
