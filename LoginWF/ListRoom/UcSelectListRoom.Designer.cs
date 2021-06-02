@@ -56,11 +56,11 @@ namespace LoginWF.ListRoom
             this.gia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.mieuTaDatPhong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbCustomer = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnDeleteBookRoom = new DevExpress.XtraEditors.SimpleButton();
             this.btnAddBookRoom = new DevExpress.XtraEditors.SimpleButton();
             this.btnEditBookRoom = new DevExpress.XtraEditors.SimpleButton();
-            this.cbCustomer = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gListRoom)).BeginInit();
@@ -85,7 +85,7 @@ namespace LoginWF.ListRoom
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1161, 431);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1354, 530);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupBox1
@@ -97,7 +97,7 @@ namespace LoginWF.ListRoom
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(574, 427);
+            this.groupBox1.Size = new System.Drawing.Size(671, 526);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách phòng";
@@ -106,11 +106,11 @@ namespace LoginWF.ListRoom
             // 
             this.gListRoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gListRoom.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gListRoom.Location = new System.Drawing.Point(3, 65);
+            this.gListRoom.Location = new System.Drawing.Point(3, 78);
             this.gListRoom.MainView = this.gvListRoom;
             this.gListRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gListRoom.Name = "gListRoom";
-            this.gListRoom.Size = new System.Drawing.Size(568, 360);
+            this.gListRoom.Size = new System.Drawing.Size(665, 446);
             this.gListRoom.TabIndex = 10;
             this.gListRoom.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvListRoom});
@@ -197,19 +197,19 @@ namespace LoginWF.ListRoom
             this.panel1.Controls.Add(this.btnAddListRoom);
             this.panel1.Controls.Add(this.btnEditListRoom);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 16);
+            this.panel1.Location = new System.Drawing.Point(3, 18);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(568, 49);
+            this.panel1.Size = new System.Drawing.Size(665, 60);
             this.panel1.TabIndex = 0;
             // 
             // btnDeleteListRoom
             // 
             this.btnDeleteListRoom.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteListRoom.ImageOptions.Image")));
-            this.btnDeleteListRoom.Location = new System.Drawing.Point(273, 4);
+            this.btnDeleteListRoom.Location = new System.Drawing.Point(318, 5);
             this.btnDeleteListRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteListRoom.Name = "btnDeleteListRoom";
-            this.btnDeleteListRoom.Size = new System.Drawing.Size(129, 41);
+            this.btnDeleteListRoom.Size = new System.Drawing.Size(150, 50);
             this.btnDeleteListRoom.TabIndex = 15;
             this.btnDeleteListRoom.Text = "Xóa";
             this.btnDeleteListRoom.Click += new System.EventHandler(this.btnDeleteListRoom_Click);
@@ -217,10 +217,10 @@ namespace LoginWF.ListRoom
             // btnAddListRoom
             // 
             this.btnAddListRoom.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddListRoom.ImageOptions.Image")));
-            this.btnAddListRoom.Location = new System.Drawing.Point(6, 4);
+            this.btnAddListRoom.Location = new System.Drawing.Point(7, 5);
             this.btnAddListRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddListRoom.Name = "btnAddListRoom";
-            this.btnAddListRoom.Size = new System.Drawing.Size(129, 41);
+            this.btnAddListRoom.Size = new System.Drawing.Size(150, 50);
             this.btnAddListRoom.TabIndex = 13;
             this.btnAddListRoom.Text = "Thêm";
             this.btnAddListRoom.Click += new System.EventHandler(this.btnAddListRoom_Click);
@@ -228,10 +228,10 @@ namespace LoginWF.ListRoom
             // btnEditListRoom
             // 
             this.btnEditListRoom.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEditListRoom.ImageOptions.Image")));
-            this.btnEditListRoom.Location = new System.Drawing.Point(140, 4);
+            this.btnEditListRoom.Location = new System.Drawing.Point(163, 5);
             this.btnEditListRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditListRoom.Name = "btnEditListRoom";
-            this.btnEditListRoom.Size = new System.Drawing.Size(129, 41);
+            this.btnEditListRoom.Size = new System.Drawing.Size(150, 50);
             this.btnEditListRoom.TabIndex = 14;
             this.btnEditListRoom.Text = "Sửa";
             this.btnEditListRoom.Click += new System.EventHandler(this.btnEditListRoom_Click);
@@ -241,11 +241,11 @@ namespace LoginWF.ListRoom
             this.groupBox2.Controls.Add(this.gBookRoom);
             this.groupBox2.Controls.Add(this.panel2);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(583, 2);
+            this.groupBox2.Location = new System.Drawing.Point(680, 2);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(575, 427);
+            this.groupBox2.Size = new System.Drawing.Size(671, 526);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Đặt phòng";
@@ -254,11 +254,11 @@ namespace LoginWF.ListRoom
             // 
             this.gBookRoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gBookRoom.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gBookRoom.Location = new System.Drawing.Point(3, 94);
+            this.gBookRoom.Location = new System.Drawing.Point(3, 114);
             this.gBookRoom.MainView = this.gvBookRoom;
             this.gBookRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gBookRoom.Name = "gBookRoom";
-            this.gBookRoom.Size = new System.Drawing.Size(569, 331);
+            this.gBookRoom.Size = new System.Drawing.Size(665, 410);
             this.gBookRoom.TabIndex = 11;
             this.gBookRoom.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvBookRoom});
@@ -347,19 +347,39 @@ namespace LoginWF.ListRoom
             this.panel2.Controls.Add(this.btnAddBookRoom);
             this.panel2.Controls.Add(this.btnEditBookRoom);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 16);
+            this.panel2.Location = new System.Drawing.Point(3, 18);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(569, 78);
+            this.panel2.Size = new System.Drawing.Size(665, 96);
             this.panel2.TabIndex = 1;
+            // 
+            // cbCustomer
+            // 
+            this.cbCustomer.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCustomer.FormattingEnabled = true;
+            this.cbCustomer.Location = new System.Drawing.Point(187, 64);
+            this.cbCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbCustomer.Name = "cbCustomer";
+            this.cbCustomer.Size = new System.Drawing.Size(282, 26);
+            this.cbCustomer.TabIndex = 33;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(177, 18);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Lựa chọn Khách hàng : ";
             // 
             // btnDeleteBookRoom
             // 
             this.btnDeleteBookRoom.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteBookRoom.ImageOptions.Image")));
-            this.btnDeleteBookRoom.Location = new System.Drawing.Point(273, 4);
+            this.btnDeleteBookRoom.Location = new System.Drawing.Point(318, 5);
             this.btnDeleteBookRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteBookRoom.Name = "btnDeleteBookRoom";
-            this.btnDeleteBookRoom.Size = new System.Drawing.Size(129, 41);
+            this.btnDeleteBookRoom.Size = new System.Drawing.Size(150, 50);
             this.btnDeleteBookRoom.TabIndex = 15;
             this.btnDeleteBookRoom.Text = "Xóa";
             this.btnDeleteBookRoom.Click += new System.EventHandler(this.btnDeleteBookRoom_Click);
@@ -367,10 +387,10 @@ namespace LoginWF.ListRoom
             // btnAddBookRoom
             // 
             this.btnAddBookRoom.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddBookRoom.ImageOptions.Image")));
-            this.btnAddBookRoom.Location = new System.Drawing.Point(6, 4);
+            this.btnAddBookRoom.Location = new System.Drawing.Point(7, 5);
             this.btnAddBookRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddBookRoom.Name = "btnAddBookRoom";
-            this.btnAddBookRoom.Size = new System.Drawing.Size(129, 41);
+            this.btnAddBookRoom.Size = new System.Drawing.Size(150, 50);
             this.btnAddBookRoom.TabIndex = 13;
             this.btnAddBookRoom.Text = "Thêm";
             this.btnAddBookRoom.Click += new System.EventHandler(this.btnAddBookRoom_Click);
@@ -378,42 +398,22 @@ namespace LoginWF.ListRoom
             // btnEditBookRoom
             // 
             this.btnEditBookRoom.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEditBookRoom.ImageOptions.Image")));
-            this.btnEditBookRoom.Location = new System.Drawing.Point(140, 4);
+            this.btnEditBookRoom.Location = new System.Drawing.Point(163, 5);
             this.btnEditBookRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEditBookRoom.Name = "btnEditBookRoom";
-            this.btnEditBookRoom.Size = new System.Drawing.Size(129, 41);
+            this.btnEditBookRoom.Size = new System.Drawing.Size(150, 50);
             this.btnEditBookRoom.TabIndex = 14;
             this.btnEditBookRoom.Text = "Sửa";
             this.btnEditBookRoom.Click += new System.EventHandler(this.btnEditBookRoom_Click);
             // 
-            // cbCustomer
-            // 
-            this.cbCustomer.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCustomer.FormattingEnabled = true;
-            this.cbCustomer.Location = new System.Drawing.Point(160, 52);
-            this.cbCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbCustomer.Name = "cbCustomer";
-            this.cbCustomer.Size = new System.Drawing.Size(242, 22);
-            this.cbCustomer.TabIndex = 33;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 14);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Lựa chọn Khách hàng : ";
-            // 
             // UcSelectListRoom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UcSelectListRoom";
-            this.Size = new System.Drawing.Size(1161, 431);
+            this.Size = new System.Drawing.Size(1354, 530);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gListRoom)).EndInit();

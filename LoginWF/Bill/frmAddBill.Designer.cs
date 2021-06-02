@@ -214,7 +214,7 @@ namespace LoginWF.Bill
             this.Controls.Add(this.btnAccess);
             this.Name = "frmAddBill";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmAddBill";
+            this.Text = "Thêm/Sửa Hóa đơn";
             this.Load += new System.EventHandler(this.frmAddBill_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdBill)).EndInit();

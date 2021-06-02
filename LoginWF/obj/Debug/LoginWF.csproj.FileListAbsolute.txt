@@ -221,3 +221,5 @@ C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.WinFor
 C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.SalesReport.UcSelectSalesReport.resources
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.SalesReport.UCSaleReportWeek.resources
+C:\Users\ASUS\source\repos\BTL_NET1\BTL_NET1\LoginWF\obj\Debug\LoginWF.frmDoiMK.resources

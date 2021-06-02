@@ -54,5 +54,21 @@ namespace LoginWF
         {
             AddToScreen(new SalesReport.UcSelectSalesReport());
         }
+
+        private void btnSaleReport2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            AddToScreen(new SalesReport.UCSaleReportWeek());
+        }
+
+        private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            AddToScreen(new CardCustomer.UcSelectCadCustomer());
+        }
+
+        private void barHeaderItem1_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmDoiMK frm = new frmDoiMK();
+            frm.ShowDialog();
+        }
     }
 }

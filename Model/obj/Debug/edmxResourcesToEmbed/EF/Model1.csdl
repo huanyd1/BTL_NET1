@@ -37,6 +37,15 @@
     <NavigationProperty Name="khachHang" Relationship="Self.FK__datPhong__mieuTa__1FCDBCEB" FromRole="datPhong" ToRole="khachHang" />
     <NavigationProperty Name="hoaDons" Relationship="Self.fk_hoaDon" FromRole="datPhong" ToRole="hoaDon" />
   </EntityType>
+  <EntityType Name="DOANHTHUNAM">
+    <Key>
+      <PropertyRef Name="MaThang" />
+    </Key>
+    <Property Name="MaThang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenThang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoTien" Type="Int32" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
   <EntityType Name="hoaDon">
     <Key>
       <PropertyRef Name="maHoaDon" />
@@ -202,6 +211,7 @@
     <EntitySet Name="Admins" EntityType="Self.Admin" />
     <EntitySet Name="danhSachPhongs" EntityType="Self.danhSachPhong" />
     <EntitySet Name="datPhongs" EntityType="Self.datPhong" />
+    <EntitySet Name="DOANHTHUNAMs" EntityType="Self.DOANHTHUNAM" />
     <EntitySet Name="hoaDons" EntityType="Self.hoaDon" />
     <EntitySet Name="khachHangs" EntityType="Self.khachHang" />
     <EntitySet Name="kieuThanhToans" EntityType="Self.kieuThanhToan" />

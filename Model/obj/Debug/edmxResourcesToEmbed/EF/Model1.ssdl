@@ -32,6 +32,15 @@
     <Property Name="gia" Type="money" />
     <Property Name="mieuTaDatPhong" Type="nvarchar" MaxLength="200" />
   </EntityType>
+  <EntityType Name="DOANHTHUNAM">
+    <Key>
+      <PropertyRef Name="MaThang" />
+    </Key>
+    <Property Name="MaThang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenThang" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoTien" Type="int" />
+    <Property Name="GhiChu" Type="nvarchar(max)" />
+  </EntityType>
   <EntityType Name="hoaDon">
     <Key>
       <PropertyRef Name="maHoaDon" />
@@ -100,13 +109,6 @@
     <Property Name="mieuTaKhachSan" Type="nvarchar" MaxLength="100" />
     <Property Name="soPhong" Type="int" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6013: The table/view 'QUANLYKHACHSAN.dbo.SalesReport' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="SalesReport">
-          <Property Name="SalesYear" Type="int" />
-          <Property Name="SalesMonth" Type="int" />
-          <Property Name="TotalSales" Type="money" />
-        </EntityType>-->
   <Association Name="FK__danhSachP__giaPh__1273C1CD">
     <End Role="thongTinKhachSan" Type="Self.thongTinKhachSan" Multiplicity="0..1" />
     <End Role="danhSachPhong" Type="Self.danhSachPhong" Multiplicity="*" />
@@ -195,6 +197,7 @@ warning 6013: The table/view 'QUANLYKHACHSAN.dbo.SalesReport' does not have a pr
     <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="danhSachPhong" EntityType="Self.danhSachPhong" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="datPhong" EntityType="Self.datPhong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DOANHTHUNAM" EntityType="Self.DOANHTHUNAM" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="hoaDon" EntityType="Self.hoaDon" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="khachHang" EntityType="Self.khachHang" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="kieuThanhToan" EntityType="Self.kieuThanhToan" Schema="dbo" store:Type="Tables" />

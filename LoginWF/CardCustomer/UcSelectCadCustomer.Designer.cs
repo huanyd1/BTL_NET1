@@ -176,7 +176,7 @@
             // 
             this.cbCardType.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCardType.FormattingEnabled = true;
-            this.cbCardType.Location = new System.Drawing.Point(144, 61);
+            this.cbCardType.Location = new System.Drawing.Point(192, 61);
             this.cbCardType.Name = "cbCardType";
             this.cbCardType.Size = new System.Drawing.Size(324, 26);
             this.cbCardType.TabIndex = 17;

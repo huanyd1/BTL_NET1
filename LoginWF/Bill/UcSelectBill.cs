@@ -35,11 +35,11 @@ namespace LoginWF.Bill
 
         private void LoadcbPaymentType()
         {
-            BookRoomDAO dao = new BookRoomDAO();
+            PaymentTypeDAO dao = new PaymentTypeDAO();
 
             cbPaymentType.DataSource = dao.GetAll();
-            cbPaymentType.DisplayMember = "maPhong";
-            cbPaymentType.ValueMember = "maDatPhong";
+            cbPaymentType.DisplayMember = "tenKieuThanhToan";
+            cbPaymentType.ValueMember = "maKieuThanhToan";
         }
 
         public void LoadBillByIDPaymentType()

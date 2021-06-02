@@ -24,9 +24,7 @@ namespace LoginWF.Customer
         public frmAddCustomer()
         {
             InitializeComponent();
-            frmAddCustomer frmAddCustomer = new frmAddCustomer();
-            frmAddCustomer.AcceptButton = btnAccess;
-            frmAddCustomer.CancelButton = btnExit;
+
         }
 
         public bool IsSave

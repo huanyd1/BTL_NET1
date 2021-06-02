@@ -255,7 +255,7 @@ namespace LoginWF.Bill
             // 
             this.cbPaymentType.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPaymentType.FormattingEnabled = true;
-            this.cbPaymentType.Location = new System.Drawing.Point(221, 66);
+            this.cbPaymentType.Location = new System.Drawing.Point(262, 66);
             this.cbPaymentType.Name = "cbPaymentType";
             this.cbPaymentType.Size = new System.Drawing.Size(306, 26);
             this.cbPaymentType.TabIndex = 31;

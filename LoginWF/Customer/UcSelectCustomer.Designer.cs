@@ -170,7 +170,7 @@ namespace LoginWF.Customer
             // 
             this.cbCardCustomer.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCardCustomer.FormattingEnabled = true;
-            this.cbCardCustomer.Location = new System.Drawing.Point(644, 17);
+            this.cbCardCustomer.Location = new System.Drawing.Point(668, 17);
             this.cbCardCustomer.Name = "cbCardCustomer";
             this.cbCardCustomer.Size = new System.Drawing.Size(324, 26);
             this.cbCardCustomer.TabIndex = 19;

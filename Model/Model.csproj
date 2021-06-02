@@ -61,6 +61,7 @@
     <Compile Include="DAO\CardTypeDAO.cs" />
     <Compile Include="DAO\CardCustomerDAO.cs" />
     <Compile Include="DAO\CustomerDAO.cs" />
+    <Compile Include="DAO\DoanhThuDAO.cs" />
     <Compile Include="DAO\HotelInfomationDAO.cs" />
     <Compile Include="DAO\ListRoomDAO.cs" />
     <Compile Include="DAO\PaymentTypeDAO.cs" />
@@ -72,6 +73,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\datPhong.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\DOANHTHUNAM.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="EF\hoaDon.cs">
@@ -152,6 +156,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="EF\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

@@ -4,17 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9aea710807104dd5bef14aa56bf4317a" Name="Diagram1">
-        <EntityTypeShape EntityType="QUANLYKHACHSANModel.Admin" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QUANLYKHACHSANModel.danhSachPhong" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QUANLYKHACHSANModel.datPhong" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="QUANLYKHACHSANModel.hoaDon" Width="1.5" PointX="9.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QUANLYKHACHSANModel.khachHang" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QUANLYKHACHSANModel.kieuThanhToan" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QUANLYKHACHSANModel.loaiTheKhachHang" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QUANLYKHACHSANModel.sysdiagram" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QUANLYKHACHSANModel.theKhachHang" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QUANLYKHACHSANModel.thongTinKhachSan" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+      <Diagram DiagramId="15552e1877824be295ce63c1cd36c6c3" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.Admin" Width="1.5" PointX="14.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.danhSachPhong" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.datPhong" Width="1.5" PointX="8.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.DOANHTHUNAM" Width="1.5" PointX="14.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.hoaDon" Width="1.5" PointX="11.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.khachHang" Width="1.5" PointX="6.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.kieuThanhToan" Width="1.5" PointX="10.375" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.loaiTheKhachHang" Width="1.5" PointX="0.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.sysdiagram" Width="1.5" PointX="4.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.theKhachHang" Width="1.5" PointX="3.625" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYKHACHSANModel.thongTinKhachSan" Width="1.5" PointX="0.5" PointY="4.125" IsExpanded="true" />
         <AssociationConnector Association="QUANLYKHACHSANModel.FK__danhSachP__giaPh__1273C1CD" ManuallyRouted="false" />
         <AssociationConnector Association="QUANLYKHACHSANModel.FK__datPhong__maPhon__20C1E124" ManuallyRouted="false" />
         <AssociationConnector Association="QUANLYKHACHSANModel.FK__datPhong__mieuTa__1FCDBCEB" ManuallyRouted="false" />

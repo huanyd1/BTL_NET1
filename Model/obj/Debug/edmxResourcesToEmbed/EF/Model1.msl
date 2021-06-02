@@ -36,6 +36,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="DOANHTHUNAMs">
+      <EntityTypeMapping TypeName="QUANLYKHACHSANModel.DOANHTHUNAM">
+        <MappingFragment StoreEntitySet="DOANHTHUNAM">
+          <ScalarProperty Name="MaThang" ColumnName="MaThang" />
+          <ScalarProperty Name="TenThang" ColumnName="TenThang" />
+          <ScalarProperty Name="SoTien" ColumnName="SoTien" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="hoaDons">
       <EntityTypeMapping TypeName="QUANLYKHACHSANModel.hoaDon">
         <MappingFragment StoreEntitySet="hoaDon">

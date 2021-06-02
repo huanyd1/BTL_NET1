@@ -143,7 +143,7 @@ namespace LoginWF.Bill
             this.Controls.Add(this.btnAccess);
             this.Name = "frmAddPaymentType";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmAddPaymentType";
+            this.Text = "Thêm/Sửa Kiểu thanh toán";
             this.Load += new System.EventHandler(this.frmAddPaymentType_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIdPaymentType)).EndInit();

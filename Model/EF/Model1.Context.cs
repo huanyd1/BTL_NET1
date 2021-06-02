@@ -28,6 +28,7 @@ namespace Model.EF
         public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<danhSachPhong> danhSachPhongs { get; set; }
         public virtual DbSet<datPhong> datPhongs { get; set; }
+        public virtual DbSet<DOANHTHUNAM> DOANHTHUNAMs { get; set; }
         public virtual DbSet<hoaDon> hoaDons { get; set; }
         public virtual DbSet<khachHang> khachHangs { get; set; }
         public virtual DbSet<kieuThanhToan> kieuThanhToans { get; set; }

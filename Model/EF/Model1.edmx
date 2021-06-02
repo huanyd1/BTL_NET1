@@ -37,6 +37,15 @@
           <Property Name="gia" Type="money" />
           <Property Name="mieuTaDatPhong" Type="nvarchar" MaxLength="200" />
         </EntityType>
+        <EntityType Name="DOANHTHUNAM">
+          <Key>
+            <PropertyRef Name="MaThang" />
+          </Key>
+          <Property Name="MaThang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenThang" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoTien" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar(max)" />
+        </EntityType>
         <EntityType Name="hoaDon">
           <Key>
             <PropertyRef Name="maHoaDon" />
@@ -105,13 +114,6 @@
           <Property Name="mieuTaKhachSan" Type="nvarchar" MaxLength="100" />
           <Property Name="soPhong" Type="int" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'QUANLYKHACHSAN.dbo.SalesReport' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="SalesReport">
-          <Property Name="SalesYear" Type="int" />
-          <Property Name="SalesMonth" Type="int" />
-          <Property Name="TotalSales" Type="money" />
-        </EntityType>-->
         <Association Name="FK__danhSachP__giaPh__1273C1CD">
           <End Role="thongTinKhachSan" Type="Self.thongTinKhachSan" Multiplicity="0..1" />
           <End Role="danhSachPhong" Type="Self.danhSachPhong" Multiplicity="*" />
@@ -200,6 +202,7 @@ warning 6013: The table/view 'QUANLYKHACHSAN.dbo.SalesReport' does not have a pr
           <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="danhSachPhong" EntityType="Self.danhSachPhong" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="datPhong" EntityType="Self.datPhong" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DOANHTHUNAM" EntityType="Self.DOANHTHUNAM" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="hoaDon" EntityType="Self.hoaDon" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="khachHang" EntityType="Self.khachHang" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="kieuThanhToan" EntityType="Self.kieuThanhToan" Schema="dbo" store:Type="Tables" />
@@ -277,6 +280,15 @@ warning 6013: The table/view 'QUANLYKHACHSAN.dbo.SalesReport' does not have a pr
           <NavigationProperty Name="danhSachPhong" Relationship="Self.FK__datPhong__maPhon__20C1E124" FromRole="datPhong" ToRole="danhSachPhong" />
           <NavigationProperty Name="khachHang" Relationship="Self.FK__datPhong__mieuTa__1FCDBCEB" FromRole="datPhong" ToRole="khachHang" />
           <NavigationProperty Name="hoaDons" Relationship="Self.fk_hoaDon" FromRole="datPhong" ToRole="hoaDon" />
+        </EntityType>
+        <EntityType Name="DOANHTHUNAM">
+          <Key>
+            <PropertyRef Name="MaThang" />
+          </Key>
+          <Property Name="MaThang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenThang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoTien" Type="Int32" />
+          <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="hoaDon">
           <Key>
@@ -443,6 +455,7 @@ warning 6013: The table/view 'QUANLYKHACHSAN.dbo.SalesReport' does not have a pr
           <EntitySet Name="Admins" EntityType="Self.Admin" />
           <EntitySet Name="danhSachPhongs" EntityType="Self.danhSachPhong" />
           <EntitySet Name="datPhongs" EntityType="Self.datPhong" />
+          <EntitySet Name="DOANHTHUNAMs" EntityType="Self.DOANHTHUNAM" />
           <EntitySet Name="hoaDons" EntityType="Self.hoaDon" />
           <EntitySet Name="khachHangs" EntityType="Self.khachHang" />
           <EntitySet Name="kieuThanhToans" EntityType="Self.kieuThanhToan" />
@@ -517,6 +530,16 @@ warning 6013: The table/view 'QUANLYKHACHSAN.dbo.SalesReport' does not have a pr
                 <ScalarProperty Name="ngayKetThuc" ColumnName="ngayKetThuc" />
                 <ScalarProperty Name="gia" ColumnName="gia" />
                 <ScalarProperty Name="mieuTaDatPhong" ColumnName="mieuTaDatPhong" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DOANHTHUNAMs">
+            <EntityTypeMapping TypeName="QUANLYKHACHSANModel.DOANHTHUNAM">
+              <MappingFragment StoreEntitySet="DOANHTHUNAM">
+                <ScalarProperty Name="MaThang" ColumnName="MaThang" />
+                <ScalarProperty Name="TenThang" ColumnName="TenThang" />
+                <ScalarProperty Name="SoTien" ColumnName="SoTien" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
